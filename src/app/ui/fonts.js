@@ -1,9 +1,17 @@
 import { Inter, Roboto } from 'next/font/google';
 import localFont from 'next/font/local';
 
-export const inter = Inter({ weight: ['400', '500'], subsets: ['latin'] });
+export const inter = Inter({
+  weight: ['400', '500'],
+  subsets: ['latin'],
+  variable: '--font-inter'
+});
 
-export const roboto = Roboto({ weight: ['400', '500', '700'], subsets: ['latin'] });
+export const roboto = Roboto({
+  weight: ['400', '500', '700'],
+  subsets: ['latin'],
+  variable: '--font-roboto'
+});
 
 export const circe = localFont({
   src: [

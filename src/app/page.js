@@ -5,7 +5,7 @@ import mainImage from '@/app/ui/images/main.png';
 export default function Home() {
   return (
     <main className={styles.main}>
-      <Image src={mainImage} className={styles.image}></Image>
+      <Image src={mainImage} className={styles.image} alt="main picture"></Image>
     </main>
   );
 }

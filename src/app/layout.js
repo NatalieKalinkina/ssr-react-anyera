@@ -1,6 +1,7 @@
 import './globals.css';
 import { inter } from '@/app/ui/fonts';
 import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 
 export const metadata = {
   title: 'Create Next App',
@@ -13,6 +14,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

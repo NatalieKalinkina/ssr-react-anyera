@@ -1,0 +1,54 @@
+.footer {
+  width: 100%;
+  height: 155px;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.about {
+  padding: 7px 0;
+  box-sizing: border-box;
+}
+
+.text {
+  margin-top: 13px;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: var(--font-roboto);
+  font-weight: 400;
+  margin-block-end: 0;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 13px;
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 0 3.5px;
+  box-sizing: border-box;
+}
+
+.link {
+  text-decoration: none;
+  color: #000;
+}
+
+.link:hover {
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 767px) {
+  /* add styles */
+}
