@@ -6,7 +6,6 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.image}></div>
-      {/* <Image src={mainImage} className={styles.image} alt="main picture"></Image> */}
     </main>
   );
 }

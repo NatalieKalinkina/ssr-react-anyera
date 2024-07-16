@@ -1,0 +1,153 @@
+.container {
+  position: fixed;
+  z-index: 2;
+  right: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  max-width: 560px;
+  height: 100%;
+  background-color: #fff;
+  padding: 30px;
+  box-sizing: border-box;
+  font-family: var(--font-roboto);
+  font-weight: 400;
+  line-height: normal;
+  color: #868686;
+  border-radius: 20px 0 0 20px;
+}
+
+.close {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url('../../ui/images/close-icon.svg');
+  background-color: transparent;
+  background-size: 30px 30px;
+  align-self: flex-end;
+  border: 0;
+}
+
+.container h2 {
+  font-size: 40px;
+  color: #000000;
+  font-weight: 700;
+  margin-block-start: 197px;
+  margin-bottom: 10px;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  margin-bottom: 15px;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  font-size: 16px;
+  border-radius: 100px;
+  border: 1px solid #dddddd;
+}
+
+.input:last-of-type {
+  margin-bottom: 20px;
+}
+
+.check {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  letter-spacing: -1%;
+}
+
+.label {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-size: 16px;
+  color: #656565;
+  display: flex;
+  align-items: center;
+}
+
+.checkbox {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  margin-right: 10px;
+  accent-color: #868686;
+}
+
+.button {
+  width: 100%;
+  height: 44px;
+  padding: 10px 0;
+  border-radius: 100px;
+  background-color: #e83801;
+  color: #fff;
+  box-sizing: border-box;
+  border: 0;
+  margin: 24px auto 3px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -1%;
+}
+
+.button:hover {
+  background-color: #000000;
+}
+
+.bottomLine {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  display: flex;
+  gap: 13px;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.link {
+  color: #014e87;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.sign_up {
+  color: #2d6cb4;
+  text-decoration: none;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 73%;
+  }
+
+  .container h2 {
+    align-self: flex-start;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 100%;
+    border-radius: 0;
+    padding: 30px 15px;
+  }
+
+  .container h2 {
+    font-size: 36px;
+    margin-block-start: 20px;
+  }
+
+  .close {
+    margin-right: 15px;
+  }
+}

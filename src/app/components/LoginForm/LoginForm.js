@@ -1,7 +1,12 @@
 'use client';
 import styles from './loginForm.module.css';
+import { circe } from '../../ui/fonts';
 
 export default function LoginForm({ toggleForm }) {
+  function handleSubmit(evt) {
+    evt.preventDefault();
+    console.log('form');
+  }
   return (
     <div className={styles.container}>
       <button
@@ -10,39 +15,29 @@ export default function LoginForm({ toggleForm }) {
         aria-label="закрыть окно"
         onClick={toggleForm}
       ></button>
-      <h2 className={styles.title}>Вход</h2>
-      <form className={styles.form}>
-        <input
-          type="text"
-          className={styles.input}
-          placeholder="Введите e-mail или телефон"
-          value="data"
-        />
-        <input
-          type="password"
-          className={styles.input}
-          placeholder=" Введите пароль"
-          value="password"
-        />
+      <h2 className={circe.className}>Вход</h2>
+      <form className={styles.form} onSubmit={handleSubmit}>
+        <input type="text" className={styles.input} placeholder="Введите e-mail или телефон" />
+        <input type="password" className={styles.input} placeholder=" Введите пароль" />
         <div className={styles.check}>
           <label className={styles.label}>
-            Запомнить меня
             <input
               className={styles.checkbox}
               type="checkbox"
               //   checked={checkedCheckbox}
               //   onChange={changeCheckbox}
             />
+            Запомнить меня
           </label>
-          <p className={styles.text}></p>
+          <p className={styles.link}>Забыли пароль?</p>
         </div>
         <button type="submit" className={styles.button}>
           Войти
         </button>
       </form>
       <div className={styles.bottomLine}>
-        <p className={styles.text}>Нет аккаунта?</p>
-        <a className={styles.link} href="#">
+        <p>Нет аккаунта?</p>
+        <a className={styles.sign_up} href="#">
           Регистрация
         </a>
       </div>

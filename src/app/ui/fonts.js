@@ -17,8 +17,8 @@ export const circe = localFont({
   src: [
     {
       path: './localFonts/Circe.ttf',
-      weight: '400',
-      style: 'normal'
+      weight: '700',
+      style: 'bold'
     }
   ]
 });

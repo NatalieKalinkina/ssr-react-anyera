@@ -6,7 +6,7 @@
 .image {
   background-image: url('../app/ui/images/main.png');
   width: 100%;
-  max-width: 1440px;
+  /* max-width: 1440px; */
   background-color: transparent;
   aspect-ratio: 96 / 43;
   background-repeat: no-repeat;
