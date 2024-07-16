@@ -1,17 +1,31 @@
 'use client';
-
+import { useState } from 'react';
 import Image from 'next/image';
 import Logo from '@/app/ui/images/logo.png';
 import styles from './header.module.css';
+import LoginForm from '../LoginForm/LoginForm';
 
 export default function Header() {
+  const [isFormOpen, setIsFormOpen] = useState(false);
+
+  function toggleForm() {
+    setIsFormOpen(!isFormOpen);
+  }
+
   return (
     <header className={styles.header}>
       <Image src={Logo} className={styles.logo} alt="driverave logo" />
-      <button type="button" className={styles.button} onClick={() => console.log('clicked')}>
+      <button type="button" className={styles.button} onClick={toggleForm}>
         <div className={styles.menu}></div>
         <div className={styles.user}></div>
       </button>
+
+      {isFormOpen && (
+        <>
+          <div className={styles.layout}></div>
+          <LoginForm toggleForm={toggleForm} />
+        </>
+      )}
     </header>
   );
 }
