@@ -6,9 +6,8 @@ import { contacts } from '../../utils/contacts';
 export default function Footer() {
   return (
     <footer className={styles.footer}>
-      {/* Добавить размер лого для мобилки */}
       <div className={styles.about}>
-        <Image src={Logo} className={styles.logo} alt="driverave logo" width={189} height={30} />
+        <Image src={Logo} className={styles.logo} alt="driverave logo" />
         <p className={styles.text}>Аренда жилья и автомобилей от владельцев</p>
       </div>
       <div className={styles.info}>

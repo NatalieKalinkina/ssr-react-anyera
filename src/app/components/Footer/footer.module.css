@@ -9,6 +9,11 @@
   background-color: white;
 }
 
+.logo {
+  width: 189px;
+  height: 30px;
+}
+
 .about {
   padding: 7px 0;
   box-sizing: border-box;
@@ -50,5 +55,30 @@
 }
 
 @media screen and (max-width: 767px) {
-  /* add styles */
+  .footer {
+    height: 244px;
+    padding: 30px 15px;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 30px;
+  }
+
+  .logo {
+    width: 302px;
+    height: 48px;
+  }
+
+  .about {
+    padding: 0;
+  }
+
+  .text {
+    margin-top: 5px;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .info {
+    gap: 20px;
+  }
 }

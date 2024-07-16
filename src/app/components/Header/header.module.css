@@ -9,6 +9,11 @@
   background-color: white;
 }
 
+.logo {
+  width: 253px;
+  height: 40px;
+}
+
 .button {
   width: 92px;
   height: 40px;
@@ -52,5 +57,10 @@
   .header {
     height: 80px;
     padding: 20px 22px 20px 15px;
+  }
+
+  .logo {
+    width: 189.75px;
+    height: 30px;
   }
 }
