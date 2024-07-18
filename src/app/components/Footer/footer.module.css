@@ -48,6 +48,7 @@
 .link {
   text-decoration: none;
   color: #000;
+  transition: opacity 0.3s ease;
 }
 
 .link:hover {

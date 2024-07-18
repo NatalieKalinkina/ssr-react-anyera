@@ -28,6 +28,12 @@
   background-size: 30px 30px;
   align-self: flex-end;
   border: 0;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.close:hover {
+  opacity: 0.5;
 }
 
 .container h2 {
@@ -96,6 +102,7 @@
   font-weight: 700;
   line-height: 24px;
   letter-spacing: -1%;
+  transition: background-color 0.3s ease;
 }
 
 .button:hover {
@@ -116,6 +123,11 @@
   color: #014e87;
   text-decoration: none;
   cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.link:hover {
+  opacity: 0.5;
 }
 
 .sign_up {
@@ -123,6 +135,11 @@
   text-decoration: none;
   font-size: 12px;
   cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.sign_up:hover {
+  opacity: 0.5;
 }
 
 @media screen and (max-width: 1200px) {
