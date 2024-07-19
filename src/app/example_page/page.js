@@ -1,4 +1,16 @@
+import styles from '../page.module.css';
+import { ceraPro } from '../ui/fonts';
 
 export default function Page() {
-    return <p>Example Page</p>
+  return (
+    <main className={styles.main}>
+      <div className={styles.image}>
+        <div className={styles.text}>
+          <p className={ceraPro.className}>Ut enim ad minim veniam</p>
+          <h1 className={ceraPro.className}>This is an example page</h1>
+          <h2 className={ceraPro.className}>It's neccessary for testing animation</h2>
+        </div>
+      </div>
+    </main>
+  );
 }
