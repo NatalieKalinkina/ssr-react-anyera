@@ -58,40 +58,49 @@ export default function SearchForm() {
     } else {
       return (
         <form className={styles.form_small} onSubmit={handleSubmit}>
-          <label className={styles.label_small}>
+          <label htmlFor="address" className={styles.label_small}>
             Город или адрес
-            <input className={styles.input_small} type="text" placeholder="Куда едем" />
           </label>
-          <label className={styles.label_small}>
-            Заезд
-            <input
-              className={styles.input_small}
-              type={checkInType}
-              placeholder="Когда"
-              id={styles.checkIn_small}
-              onFocus={() => setCheckInType('date')}
-              onBlur={() => setCheckInType('text')}
-            />
-          </label>
+          <input className={styles.input_small} type="text" id="address" placeholder="Куда едем" />
 
-          <label className={styles.label_small}>
-            Отъезд
-            <input
-              className={styles.input_small}
-              type={checkOutType}
-              placeholder="Когда"
-              id={styles.checkOut_small}
-              onFocus={() => setCheckOutType('date')}
-              onBlur={() => setCheckOutType('text')}
-            />
-          </label>
+          <div className={styles.dateContainer_small}>
+            <label className={styles.dateLabel_small}>
+              <p className={styles.dateLabelText_small}>Заезд</p>
+              <input
+                className={styles.checkInInput_small}
+                type={checkInType}
+                placeholder="Когда"
+                id="checkIn"
+                onFocus={() => setCheckInType('date')}
+                onBlur={() => setCheckInType('text')}
+              />
+            </label>
 
-          <label className={styles.label_small}>
+            <label className={styles.dateLabel_small}>
+              <p className={styles.dateLabelText_small}>Отъезд</p>
+              <input
+                className={styles.checkOutInput_small}
+                type={checkOutType}
+                placeholder="Когда"
+                id="checkOut"
+                onFocus={() => setCheckOutType('date')}
+                onBlur={() => setCheckOutType('text')}
+              />
+            </label>
+          </div>
+
+          <label htmlFor="guests" className={styles.label_small}>
             Гости
-            <input className={styles.input_small} type="text" placeholder="2 взрослых, без детей" />
           </label>
+          <input
+            className={styles.input_small}
+            type="text"
+            id="guests"
+            placeholder="2 взрослых без детей"
+          />
 
           <button type="submit" className={styles.button_small}>
+            <div className={styles.icon_small}></div>
             <p className={styles.buttonText_small}>Поиск</p>
           </button>
         </form>
