@@ -21,12 +21,7 @@ export default function LoginForm({ toggleForm }) {
         <input type="password" className={styles.input} placeholder=" Введите пароль" />
         <div className={styles.check}>
           <label className={styles.label}>
-            <input
-              className={styles.checkbox}
-              type="checkbox"
-              //   checked={checkedCheckbox}
-              //   onChange={changeCheckbox}
-            />
+            <input className={styles.checkbox} type="checkbox" />
             Запомнить меня
           </label>
           <p className={styles.link}>Забыли пароль?</p>
