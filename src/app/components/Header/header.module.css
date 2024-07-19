@@ -58,6 +58,16 @@
   z-index: 1;
   background-color: #6a1a00;
   opacity: 0.3;
+  animation: opacity 1s forwards;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.3;
+  }
 }
 
 @media screen and (max-width: 1200px) {
