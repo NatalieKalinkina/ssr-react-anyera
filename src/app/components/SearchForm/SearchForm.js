@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import styles from './SearchForm.module.css';
+import styles from './searchForm.module.css';
 import useDeviceSize from '../../hooks/useResize';
 
 export default function SearchForm() {
