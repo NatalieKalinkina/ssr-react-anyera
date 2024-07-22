@@ -16,7 +16,7 @@ export default function Page() {
       <main className={styles.main}>
         <div className={styles.image}>
           <div className={styles.text}>
-            <p className={ceraPro.className}>It's neccessary for testing animation</p>
+            <p className={ceraPro.className}>It&apos;s neccessary for testing animation</p>
             <Link href="/" scroll={true}>
               <h1 className={ceraPro.className}>This is an example page</h1>
             </Link>
