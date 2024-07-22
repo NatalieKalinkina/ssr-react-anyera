@@ -1,4 +1,5 @@
 'use client';
+import Link from 'next/link';
 import { useState } from 'react';
 import Image from 'next/image';
 import Logo from '@/app/ui/images/logo.png';
@@ -14,7 +15,9 @@ export default function Header() {
 
   return (
     <header className={styles.header}>
-      <Image src={Logo} className={styles.logo} alt="driverave logo" />
+      <Link href="/" scroll={false}>
+        <Image src={Logo} className={styles.logo} alt="driverave logo" />
+      </Link>
       <button type="button" className={styles.button} onClick={toggleForm}>
         <div className={styles.menu}></div>
         <div className={styles.user}></div>

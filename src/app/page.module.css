@@ -31,9 +31,9 @@
   font-weight: 400;
   font-size: 18px;
   opacity: 0;
-  animation: fadeIn ease-in 1; /* добавляем анимацию fadeIn */
-  animation-fill-mode: forwards; /* будет видимым после завершения анимации */
-  animation-duration: 1s; /* длительность анимации в 1 секунду */
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
 }
 
 .text h1 {
@@ -43,9 +43,10 @@
   font-size: 70px;
   line-height: 75px;
   opacity: 0;
-  animation: fadeIn ease-in 1; /* добавляем анимацию fadeIn */
-  animation-fill-mode: forwards; /* будет видимым после завершения анимации */
-  animation-duration: 1s; /* длительность анимации в 1 секунду */
+  color: #fff;
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
 }
 
 .text h2 {
@@ -54,9 +55,9 @@
   font-weight: 400;
   font-size: 24px;
   opacity: 0;
-  animation: fadeIn ease-in 1; /* добавляем анимацию fadeIn */
-  animation-fill-mode: forwards; /* будет видимым после завершения анимации */
-  animation-duration: 1s; /* длительность анимации в 1 секунду */
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
 }
 
 @keyframes fadeIn {
@@ -70,7 +71,7 @@
 
 @media screen and (max-width: 1200px) {
   .image {
-    background-image: url('../app/ui/images/main.png');
+    background-image: url('../app/ui/images/main.webp');
     width: 100%;
     max-width: 1200px;
     aspect-ratio: 768 / 803;
@@ -94,7 +95,7 @@
 
 @media screen and (max-width: 767px) {
   .image {
-    background-image: url('../app/ui/images/main_mobile.png');
+    background-image: url('../app/ui/images/main_mobile.webp');
     width: 100%;
     max-width: 767px;
     aspect-ratio: 65 / 133;
